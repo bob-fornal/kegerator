@@ -1,0 +1,34 @@
+label {
+    font-family: Arial;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.controls {
+    left: 250px;
+    padding: 1rem;
+    position: relative;
+    top: -200px;
+}
+
+.sliding-background {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+}
+.sliding-background.blocking {
+    overflow: hidden;
+}
+
+#sliding-box {
+    position: relative;
+    top: 150px;
+}
+
+#overlay-box {
+    position: relative;
+    top: -100%;
+}
+
+#overflow {
+    margin-bottom: 1rem;
+}

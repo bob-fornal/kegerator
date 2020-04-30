@@ -1,0 +1,14 @@
+#svgJug {
+    background-color: tan;
+    width: 150px;
+    height: 200px;
+}
+.svgText {
+    font-family: Arial;
+    font-size: 1em;
+    color: red;
+}
+
+.jug-wrapper {
+    display: inline-block;
+}

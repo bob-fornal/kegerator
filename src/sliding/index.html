@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/site.css" />
+        <link rel="stylesheet" type="text/css" href="sliding.css" />
+    
+        <script src="/_jquery/jquery3.3.1.js"></script>
+        <script src="sliding.js"></script>
+    </head>
+
+    <body>
+        <div class="centered">
+            <div class="title">Sliding Example</div>
+
+            <div class="sliding-background blocking">
+                <svg id="sliding-box" version="1.0"  width="200px" height="200px" viewBox="0 0 200 200">
+                    <g fill="red" stroke="white" stroke-width="1">
+                        <path d="M40,0 40,200 160,200 160,0z" />
+                    </g>
+                </svg>
+
+                <svg  id="overlay-box" version="1.0"width="200px" height="200px" viewBox="0 0 200 200">
+                    <g fill-rule="evenodd" fill="tan" stroke="white" stroke-width="0">
+                      <path d="M0,0 0,200 200,200 200,0z M50,50 50,150 150,150 150,50z"></path>
+                    </g>
+                    
+                </svg>                
+            </div>
+
+            <div class="controls">
+                <button id="overflow">Toggle Overflow</button>
+
+                <div>
+                    <input type="range" id="slider" name="slider" min="50" max="150" value="150" step="5">
+                    <label for="slider">Position</label>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <a href="/">BACK</a>
+            </div>
+        </div>
+    </body>
+</html>
