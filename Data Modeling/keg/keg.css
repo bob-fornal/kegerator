@@ -1,0 +1,235 @@
+#keg-name {
+	font-family: Arial;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 995;
+}
+
+#primary-wrapper {
+	font-size: 30pt;
+}
+#secondary-wrapper {
+	font-size: 24pt;
+}
+
+.keg-wrapper {
+  background-color: silver;
+  height: 476.5px;
+  width: 200px;
+  overflow: hidden;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.keg-handler {
+  position: absolute;
+  left: 205px;
+  top: 0;
+  
+  padding: 1rem;
+}	
+
+.keg-transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+}
+.keg-percent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  z-index: 900;
+}
+
+
+.bubbler {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 80%;
+  width: 100%;
+}
+
+.bubbles circle {
+  stroke: white;
+  fill: none;
+}
+	
+.bubbles > g > g:nth-of-type(3n) circle {
+  stroke: #87f5fb;
+}
+	
+.bubbles > g > g:nth-of-type(4n) circle {
+  stroke: #8be8cb;
+}
+
+.bubbles .bubbles-small {
+	overflow: visible;
+}
+
+.bubbles .bubbles-small > g {
+  transform: translateY(1000px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.bubbles .bubbles-small g circle {
+  transform: scale(0);
+}
+
+.bubbles .bubbles-small g:nth-of-type(1) {
+  animation: up 5.25s 2s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(1) g {
+  transform: translateX(175px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(1) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles .bubbles-small g:nth-of-type(2) {
+  animation: up 5.75s 1s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(2) g {
+  transform: translateX(310px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(2) circle {
+  animation: wobble 3s infinite ease-in-out;
+}
+
+.bubbles .bubbles-small g:nth-of-type(3) {
+  animation: up 5.25s 2s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(3) g {
+  transform: translateX(125px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(3) circle {
+  animation: wobble 3s 250ms infinite ease-in-out;
+}
+
+.bubbles .bubbles-small g:nth-of-type(4) {
+  animation: up 5.75s 2s infinite;
+}
+
+.bubbles .bubbles-small g:nth-of-type(4) g {
+  transform: translateX(410px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(4) circle {
+  animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+
+.bubbles .bubbles-small g:nth-of-type(5) {
+  animation: up 6s 1s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(5) g {
+  transform: translateX(250px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(5) circle {
+  animation: wobble 3s 250ms infinite ease-in-out;
+}
+
+
+.bubbles .bubbles-small g:nth-of-type(6) {
+  animation: up 5.13s 1s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(6) g {
+  transform: translateX(729px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(6) circle {
+  animation: wobble 3s 125ms infinite ease-in-out;
+}
+
+.bubbles .bubbles-small g:nth-of-type(7) {
+  animation: up 6.25s 2s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(7) g {
+  transform: translateX(320px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(7) circle {
+  animation: wobble 3s 325ms infinite ease-in-out;
+}
+	
+.bubbles .bubbles-small g:nth-of-type(8) {
+  animation: up 7s 1s infinite;
+}
+    
+.bubbles .bubbles-small g:nth-of-type(8) g {
+  transform: translateX(112px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(8) circle {
+  animation: wobble 3s 325ms infinite ease-in-out;
+}
+
+.bubbles .bubbles-small g:nth-of-type(9) {
+  animation: up 6.25s 1s infinite;
+}
+		
+.bubbles .bubbles-small g:nth-of-type(9) g {
+  transform: translateX(360px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(9) circle {
+  animation: wobble 3s 275ms infinite ease-in-out;
+}
+
+.bubbles .bubbles-small g:nth-of-type(10) {
+  animation: up 6s 2s infinite;
+}
+    
+.bubbles .bubbles-small g:nth-of-type(10) g {
+  transform: translateX(550px);
+}
+
+.bubbles .bubbles-small g:nth-of-type(10) circle {
+  animation: wobble 2s 905ms infinite ease-in-out;
+}
+
+@keyframes wobble {
+	
+	33% {
+		transform: translateX(-50px);
+	}
+	
+	66% {
+		transform: translateX(50px);
+	}
+	
+}
+
+@keyframes up {
+
+	0% {
+		opacity: 0;
+	}
+	
+	10%, 75% {
+		opacity: 1;
+	}
+	
+	75%, 100% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	
+}
