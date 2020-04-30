@@ -31,6 +31,12 @@ a:hover {
 .wrapper.border {
     border-bottom: 1px solid silver;
 }
+.back {
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: center;
+}
 .title {
     font-family: Arial;
     font-weight: bold;
